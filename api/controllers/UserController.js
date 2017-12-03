@@ -6,6 +6,9 @@
  */
 
 module.exports = {
-	
+
+  index: function (req, res) {
+    res.send('This is your admin page');
+  }
 };
 

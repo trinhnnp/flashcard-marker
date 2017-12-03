@@ -1,0 +1,26 @@
+<body>
+  <center>
+    <h2>Sign up</h2>
+      <form action="/signup" method="POST">
+        <table>
+          <tr>
+            <td><label for="screen_name">Screen name:</label></td>
+            <td><input type="screen_name" id="screen_name" name="screen_name"></td>
+          </tr>
+          <tr>
+            <td><label for="username">Username:</label></td>
+            <td><input type="text" id="username" name="username"></td>
+          </tr>
+          <tr>
+            <td><label for="password">Password:</label></td>
+            <td><input type="password" id="password" name="password"></td>
+          </tr>
+        </table>
+        <br/>
+        <input type="submit" value="Submit"/>
+        <input type="reset" value="Reset"/>
+      </form>
+      <br/>
+      <a href="/login">Already having account? Login.</a>
+    </center>
+</body>
