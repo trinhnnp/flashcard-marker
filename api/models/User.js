@@ -17,7 +17,7 @@ module.exports = {
 		password: {
 			type: 'string',
 			required: true,
-			minLength: 6,
+			// minLength: 6,
 		},
 		screen_name: {
 			type: 'string',
