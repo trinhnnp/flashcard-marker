@@ -13,7 +13,6 @@ module.exports = {
    * `AuthController.login()`
    */
   login: function (req, res) {
-    console.log('inputs');
     // See `api/responses/login.js`
     return res.login({
       username: req.param('username'),
@@ -63,7 +62,7 @@ module.exports = {
       // Go ahead and log this user in as well.
       // We do this by "remembering" the user in the session.
       // Subsequent requests from this user agent will have `req.session.me` set.
-      req.session.me = user._id;
+      req.session.me = user.username;
 
       // If this is not an HTML-wanting browser, e.g. AJAX/sockets/cURL/etc.,
       // send a 200 response letting the user agent know the signup was successful.
